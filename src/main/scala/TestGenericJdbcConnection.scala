@@ -3,7 +3,7 @@ import akka.stream.alpakka.slick.scaladsl.SlickSession
 import scala.concurrent.{Await, ExecutionContext}
 import scala.concurrent.duration.DurationInt
 
-object TestDatabricksConnection {
+object TestGenericJdbcConnection {
 
   def main(args : Array[String]) = {
     implicit val ec : ExecutionContext = ExecutionContext.global
