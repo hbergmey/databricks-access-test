@@ -1,7 +1,10 @@
 import akka.stream.alpakka.slick.scaladsl.SlickSession
-
 import scala.concurrent.{Await, ExecutionContext}
 import scala.concurrent.duration.DurationInt
+
+import slick.jdbc.JdbcProfile
+
+object MyProfile extends JdbcProfile
 
 object TestGenericJdbcConnection {
 
